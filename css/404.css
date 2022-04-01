@@ -8,6 +8,15 @@
   font-family: "Roboto Mono", monospace;
   font-size: 62.5%;
 }
+body {
+  background: url(../resourses/mano.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: #000;
+  height: 50vh;
+  width: 100%;
+}
 
 .header-container {
   width: 100%;
@@ -15,8 +24,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  background-color: #000;
 }
 .logo {
   z-index: 999;
@@ -73,4 +80,31 @@
 }
 .panel li a.active {
   color: red;
+}
+
+/* -------------404------------- */
+
+.error {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+.error img {
+  padding-top: 40%;
+  width: 80%;
+  position: absolute;
+}
+.menguante {
+  margin-top: -36px;
+}
+.construccion {
+  margin-top: 39px;
+  transform: translate(0, 150%);
+  opacity: 0;
+  transition: transform 1s ease;
+}
+.construccion.play {
+  opacity: 1;
+  transform: translate(0, 0);
 }
