@@ -32,54 +32,7 @@ background-position-x: 60%;
   margin-left: 20px;
 }
 
-.hamburger-inner,
-.hamburger-inner:after,
-.hamburger-inner:before {
-  background-color: #fff;
-  width: 25px;
-}
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner:after,
-.hamburger.is-active .hamburger-inner:before {
-  background-color: #fff;
-  width: 20px;
-}
-.hamburger {
-  cursor: pointer;
-  z-index: 999;
-}
 
-.header-container .panel {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #000;
-  text-align: center;
-  padding-top: 80px;
-  z-index: 998;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  transition: clip-path 0.5s ease;
-}
-.panel.is-active {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-.panel li {
-  display: block;
-  line-height: 30px;
-  margin: 60px 0;
-}
-.panel li a {
-  color: #fff;
-  font-size: 3rem;
-  text-transform: initial;
-}
-.panel li:active {
-  background: yellow;
-}
 
 /* -------------404------------- */
 
@@ -88,7 +41,27 @@ background-position-x: 60%;
   width: 100%;
   display: flex;
   justify-content: center;
+  transform: translate(0, 150%);
+  opacity: 0;
+  transition: transform 1s ease;
 }
+.error p{
+  font-size: 1.5rem;
+  color: #fff;
+  right: 34px;
+  top: 43px;
+  position: absolute;
+  width: 100px;
+  font-family: 'Bodoni Moda',
+  serif;
+}
+.error.play{
+opacity: 1;
+transform: translate(0,0);
+}
+
+
+/* ---------footer--------------- */
 footer{
   position: absolute;
   bottom: 0;
@@ -101,8 +74,8 @@ footer{
   margin-left: 31px;
 }
 .chat {
-  width: 140px;
-  height: 27px;
+  width: 130px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,6 +84,7 @@ footer{
   bottom: 0px;
   position: absolute;
   right: 1.1rem;
+  border: 1px solid #000;
 }
 .chat p{
   font-size: 1.4rem;
@@ -121,4 +95,44 @@ footer{
   font-family: 'Roboto Mono',
   monospace;
 }
+.chat.active{
+  bottom: 70px;
+}
+.contact{
+  background-color: white;
+  width: 128px;
+  height: 70px;
+  position: absolute;
+  right: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: clip-path 0.5s ease;
+  display: none;
+}
+.contact p{
+  font-size: 1.2rem;
+  font-family: 'Roboto Mono';
+  font-weight: 400;
+  line-height: 15.8px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 15px;
+}
+#messenger{
+  margin-left: 23px;
+}
+.contact p span{
+  position: absolute;
+  left: 8px;
+}
+.contact.active{
+  display: flex;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  bottom: 0;
+}
+
 
