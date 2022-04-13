@@ -1,0 +1,56 @@
+body {
+    background:url(../resourses/mano.png);
+    background-position: right;
+    background-position-x: 90%;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-color: #030303 ;
+
+}
+.logo{
+    margin-left: 5%;
+    margin-top: 80px;
+}
+.logo a img{
+   width: 30%; 
+}
+.header-container .panel{
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: left;
+    margin-left: 10px;
+    clip-path:none;
+}
+.panel li{
+    display: inline-block;
+    margin: 0 30px;
+    transition: none;
+}
+.panel li a{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: initial;
+    color: #fff;
+
+}
+.hamburger{
+    display: none;
+}
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: 100px;
+}
+.error img {
+    margin-top: 8%;
+    width: 30%;
+    position: absolute;
+}
+.construccion {
+    margin-top: 10px;
+}
