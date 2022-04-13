@@ -49,3 +49,33 @@
     text-transform: initial;
 }
 
+/* -----------desktop----------- */
+
+.header-container .panel {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: left;
+    margin-left: 10px;
+    clip-path: none;
+}
+
+.panel li {
+    display: inline-block;
+    margin: 0 30px;
+    transition: none;
+}
+
+.panel li a {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: initial;
+    color: #fff;
+
+}
+
+.hamburger {
+    display: none;
+}
